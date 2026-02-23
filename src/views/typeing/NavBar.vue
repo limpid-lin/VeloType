@@ -108,6 +108,8 @@ nav{
     }
   }
   .nav-right{
+    display: flex;
+    align-items: center;
     float: right;
     padding: 0 .2rem;
     >div{

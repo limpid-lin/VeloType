@@ -181,7 +181,7 @@ main {
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('../../../public/imgs/homepage/intro-star-bg.9e1f9ec5.svg');
+      background: url('/imgs/homepage/intro-star-bg.9e1f9ec5.svg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -192,7 +192,7 @@ main {
       left: 0;
       width: 115%;
       height: 26%;
-      background: url('../../../public/imgs/homepage/intro-cloud.0e2ec0ab.png');
+      background: url('/imgs/homepage/intro-cloud.0e2ec0ab.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
