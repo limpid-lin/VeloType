@@ -1,4 +1,4 @@
-# Type Test - 打字练习平台
+# VeloType - 打字练习平台
 
 <p align="center">
   <a href="https://typing.zhaowumian.top" target="_blank">
