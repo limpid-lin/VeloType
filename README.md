@@ -310,16 +310,34 @@ AI 生成模块核心文件：
 }
 ```
 
-### 配置 AI 生成
-编辑 `src/stores/ai.ts` 中的配置：
+### 配置 AI 生成（环境变量）
 
-```typescript
-config: {
-  apiKey: 'your-api-key',           // 替换为你的 API Key
-  apiUrl: 'https://api.deepseek.com', // API 地址
-  model: 'deepseek-chat'            // 模型名称
-}
+1. 复制环境变量模板：
+```bash
+cp .env.example .env
 ```
+
+2. 编辑 `.env` 文件，填入实际配置：
+```env
+# AI API 密钥
+# 获取方式：访问 https://platform.deepseek.com/api_keys
+VITE_AI_API_KEY=your-api-key-here
+
+# AI API 地址
+VITE_AI_API_URL=https://api.deepseek.com/v1/chat/completions
+
+# AI 模型名称
+VITE_AI_MODEL=deepseek-chat
+```
+
+**配置说明**：
+
+| 环境变量 | 说明 | 默认值 |
+|---------|------|--------|
+| `VITE_AI_API_KEY` | DeepSeek API 密钥（必填） | - |
+| `VITE_AI_API_URL` | API 请求地址 | `https://api.deepseek.com/v1/chat/completions` |
+| `VITE_AI_MODEL` | 使用的模型名称 | `deepseek-chat` |
+
 
 ### 自定义音效
 将音频文件放入 `public/` 目录，在设置中配置对应路径。
